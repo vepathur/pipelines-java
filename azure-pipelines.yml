@@ -6,10 +6,10 @@
 trigger:
 - main
 
-strategy:
-  matrix:
-    linux:
-      imageName: "ubuntu-latest"
+#strategy:
+#  matrix:
+#    linux:
+ #     imageName: "ubuntu-latest"
 #    mac:
 #     imageName: "macOS-latest"
  # windows:
@@ -17,7 +17,7 @@ strategy:
   #maxParallel: 3
 
 pool:
-  vmImage: $(imageName)
+  vmImage: "windows-latest"
 
 strategy:
   matrix:
